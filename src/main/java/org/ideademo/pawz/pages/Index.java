@@ -1562,7 +1562,7 @@ public class Index
       // step 5: we close the document
       document.close();
       ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-      return new PDFStreamResponse(bais,"PacisAssessment" + System.currentTimeMillis());
+      return new PDFStreamResponse(bais,"PacisProjectActivity" + System.currentTimeMillis());
   }	  
 
   
