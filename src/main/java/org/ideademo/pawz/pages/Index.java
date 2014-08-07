@@ -72,7 +72,7 @@ public class Index
   
   /////////////////////////////
   //  Drives QBE Search
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   private Paw example;
   
   
@@ -84,7 +84,7 @@ public class Index
 
     
   @Property
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   private String searchText;
 
   @Inject
@@ -94,10 +94,10 @@ public class Index
   private HibernateSessionManager sessionManager;
 
   @Property 
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   int retrieved; 
   @Property 
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   int total;
 
   @Inject
@@ -117,7 +117,7 @@ public class Index
   
   // the Capability Select box
   @Property
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   private Capability capability;
   
   public enum Capability
@@ -129,7 +129,7 @@ public class Index
   
   // the Focus Area select box
   @Property
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   private Focus focusarea;
   
   public enum Focus
@@ -140,7 +140,7 @@ public class Index
   
   // the regions select box
   @Property
-  @Persist (PersistenceConstants.FLASH)
+  @Persist
   @PageActivationContext 
   private Regions regions;
   
